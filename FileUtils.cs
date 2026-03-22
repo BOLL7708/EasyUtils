@@ -93,7 +93,7 @@ public static class FileUtils
 
     #region Auxilliary
 
-    private static FileResult FileExists(string filePath)
+    public static FileResult FileExists(string filePath)
     {
         var fileName = Path.GetFileName(filePath);
         try
@@ -107,7 +107,7 @@ public static class FileUtils
         }
     }
 
-    private static FileResult EnsureDirectoryExists(string filePath)
+    public static FileResult EnsureDirectoryExists(string filePath)
     {
         var path = Path.GetDirectoryName(filePath) ?? "";
         try
